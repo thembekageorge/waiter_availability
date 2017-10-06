@@ -1,0 +1,72 @@
+<head>
+  <meta charset="utf-8">
+  <title>days</title>
+  <link href="https://fonts.googleapis.com/css?family=Akronim|Londrina+Outline|Rye|Shojumaru" rel="stylesheet">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/days.css">
+</head>
+
+<body>
+  <h1>WAITER AVAILABILITY</h1> {{greets}}
+
+  <div class="name">
+    {{messages.name}}
+  </div>
+
+  <br><br><br><br>
+  <form action="" method="post" class="form-group">
+    <div>
+
+      <div class="col-sm-1">
+        <label for="Monday">
+                                        <input type="checkbox" class="form-control" id="fieldQues"  name="day" value="Monday" {{#if days.Monday}}checked{{/if}}><b>Monday</b>
+
+                                </div>
+                </div>
+                    <div class="col-sm-1">
+      <input type="checkbox" class="form-control" id="fieldQues"  name="day" value="Tuesday" {{#if days.Tuesday}}checked{{/if}}>
+      <label for="Tuesday"><b>Tuesday</b></label>
+
+      </div>
+      <div class="wsd">
+        <div class="col-sm-1">
+          <input type="checkbox" class="form-control" id="fieldQues" name="day" value="Wednesday" {{#if days.Wednesday}} checked {{/if}}>
+          <label for="Wednesday"><b>Wednesday</b></label>
+
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <input type="checkbox" class="form-control" id="fieldQues" name="day" value="Thursday" {{#if days.Thursday}} checked {{/if}}>
+        <label for="Thursday"><b>Thursday</b></label>
+
+      </div>
+      <div class="col-sm-1">
+        <input type="checkbox" class="form-control" id="fieldQues" name="day" value="Friday" {{#if days.Friday}} checked {{/if}}>
+        <label for="Friday"><b>Friday</b></label>
+
+      </div>
+      <div class="col-sm-1">
+        <input type="checkbox" class="form-control" id="fieldQues" name="day" value="Saturday" {{#if days.Saturday}} checked {{/if}}>
+        <label for="Saturday"><b>Saturday</b></label>
+
+      </div>
+      <div class="col-sm-1">
+        <input type="checkbox" class="form-control" id="fieldQues" name="day" value="Sunday" {{#if days.Sunday}} checked {{/if}}>
+        <label for="Sunday"><b>Sunday</b></label>
+
+      </div>
+
+      <div class="col-sm-4">
+        <input type="submit" class="btn btn-default" value="Submit">
+      </div>
+      <br><br><br><br>
+      <div class="error">
+        {{messages.error}}
+      </div>
+
+      <div class="output">
+        {{output}}
+      </div>
+  </form>
+</body>
+</div>

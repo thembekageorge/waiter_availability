@@ -1,0 +1,29 @@
+body {
+  background-color: #DEB887;
+}
+.availableWaiters {
+
+font-size: 3.6em;
+}
+.availableWaiters1 {
+font-size: 1.6em;
+}
+li {
+  list-style-type: none;
+}
+table {
+  border-spacing: 10px 4px;
+}
+td  , th  {
+  padding: 20px;
+}
+
+.green {
+  background-color: green;
+}
+.maroon{
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}

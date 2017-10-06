@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/public/css/style.css">
+<html lang="en">
+<head>
 
-  </head>
-  <nav>
-    <h1>WAITER AVAILABILITY</h1>
-  </nav>
-  <body>
-    {{{body}}}
-  </body>
+  {{>head}}
 
+  <!-- <title>Express Tutorial</title> -->
+</head>
+
+<body>
+
+<!-- References a Handlebars partial in views/partials/bsnavbar.handlebars -->
+{{>bsnavbar}}
+
+<!-- The HTML for each view goes here -->
+<div class="container">
+{{{body}}}
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
 </html>
