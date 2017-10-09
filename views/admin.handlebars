@@ -1,98 +1,98 @@
 <head>
-        <meta charset="utf-8">
-        <title>Admin</title>
-<link href="https://fonts.googleapis.com/css?family=Akronim|Londrina+Outline|Rye|Shojumaru" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/admin.css">
+  <meta charset="utf-8">
+  <title>Admin</title>
+  <link href="https://fonts.googleapis.com/css?family=Akronim|Londrina+Outline|Rye|Shojumaru" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/admin.css">
 
 </head>
 
 <body>
-        <h6 class="availableWaiters">WAITER ADMINISTRATION</h6>
-        <p class="availableWaiters1">Admin, here are the available waiters for the week</p>
+  <h6 class="availableWaiters">WAITER ADMINISTRATION</h6>
+  <p class="availableWaiters1">Admin, here are the available waiters for the week</p>
 
-        </div>
-        <br><br><br><br>
-        <div class="table-responsive">
-        <table align="center">
-                <div class="col-sm-1">
-                <thead>
-                        <tr>
-                                <th>Monday</th>
-                                <th>Tuesday</th>
-                                <th>Wednesday</th>
-                                <th>Thursday</th>
-                                <th>Friday</th>
-                                <th>Saturday</th>
-                                <th>Sunday</th>
-                        </tr>
-                </thead>
-        </div>
-                <tbody>
-                        <ul>
-                                <div class="col-sm-1">
-                                <td class="{{mondayColor}}">
-                                        {{#each mon}}
-                                        <li>{{this}}</li>
-                                        {{/each}}
-                                </td>
-                        </div>
-                        <div class="col-sm-1">
-                                <td class="{{tuesdayColor}}">
-                                        {{#each tue}}
-                                        <li>{{this}}</li>
-                                        {{/each}}
-                                </td>
-                        </div>
-                        <div class="col-sm-1">
-                                <td class="{{wednesdayColor}}">
-                                        {{#each wed}}
-                                        <li>{{this}}</li>
-                                        {{/each}}
-                                </td>
-                        </div>
-                        <div class="col-sm-1">
-                                <td class="{{thursdayColor}}">
-                                        {{#each thur}}
-                                        <li>{{this}}</li>
-                                        {{/each}}
-                                </td>
-                        </div>
-                        <div class="col-sm-1">
-                                <td class="{{fridayColor}}">
-                                        {{#each fri}}
-                                        <li>{{this}}</li>
-                                        {{/each}}
-                                </td>
-                        </div>
-                        <div class="col-sm-1">
-                                <td class="{{saturdayColor}}">
-                                        {{#each sat}}
-                                        <li>{{this}}</li>
-                                        {{/each}}
-                                </td>
-                        </div>
-                        <div class="col-sm-1">
-                                <td class="{{sundayColor}}">
-                                        {{#each sun}}
-                                        <li>{{this}}</li>
-                                        {{/each}}
-                                </td>
-                        </div>
-                        </ul>
-                </tbody>
-        </table>
-        </div>
-        <br><br><br><br>
-        <div class="clearDData">
-                {{messages.error}}
-        </div>
-        <hr>
-        <hr>
-        <hr>
-        <form class="" action="/clear" method="post" align="center">
+  </div>
+  <br><br><br><br>
+  <div class="table-responsive">
+    <table align="center">
+      <div class="col-sm-1">
+        <thead>
+          <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+        </thead>
+      </div>
+      <tbody>
+        <ul>
+          <div class="col-sm-1">
+            <td class="{{mondayColor}}">
+              {{#each mon}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+          </div>
+          <div class="col-sm-1">
+            <td class="{{tuesdayColor}}">
+              {{#each tue}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+          </div>
+          <div class="col-sm-1">
+            <td class="{{wednesdayColor}}">
+              {{#each wed}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+          </div>
+          <div class="col-sm-1">
+            <td class="{{thursdayColor}}">
+              {{#each thur}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+          </div>
+          <div class="col-sm-1">
+            <td class="{{fridayColor}}">
+              {{#each fri}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+          </div>
+          <div class="col-sm-1">
+            <td class="{{saturdayColor}}">
+              {{#each sat}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+          </div>
+          <div class="col-sm-1">
+            <td class="{{sundayColor}}">
+              {{#each sun}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+          </div>
+        </ul>
+      </tbody>
+    </table>
+  </div>
+  <br><br><br><br>
+  <div class="clearDData">
+    {{messages.error}}
+  </div>
+  <hr>
+  <hr>
+  <hr>
+  <form class="" action="/clear" method="post" align="center">
 
-                <input type="submit" name="" value="Clear Histoy" class="clearData">
-        </form>
+    <input type="submit" name="" value="Clear Histoy" class="clearData">
+  </form>
 </body>
