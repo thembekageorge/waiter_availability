@@ -15,9 +15,9 @@ module.exports = function(models) {
   const waiterAccess = function(req, res, next) {
 
     var firstLetter = req.params.username.substring(0, 1);
-    var uppercase = req.params.username.substring(0, 1).toUpperCase()
+    var uppercase = req.params.username.substring(0, 1).toUpperCase();
     var username = req.params.username.replace(firstLetter, uppercase);
-    var days = req.body.day
+    var days = req.body.day;
 
 
     models.waiterInfo.findOne({
@@ -33,6 +33,7 @@ module.exports = function(models) {
               waiterName: results.waiterName,
               days: results.daysToWork
             }
+            console.log(data);
             req.flash("name", "Welcome back  " + results.waiterName + ",  you can update your days")
             res.render("days", data)
           }
@@ -87,8 +88,6 @@ module.exports = function(models) {
         output: message
       })
     } else {
-
-
       if (!Array.isArray(days)) {
         days = [days]
       }
@@ -100,7 +99,6 @@ module.exports = function(models) {
 
       console.log(daysObject);
       console.log('========================');
-
 
       models.waiterInfo.findOneAndUpdate({
         waiterName: username
