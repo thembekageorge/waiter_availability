@@ -5,7 +5,7 @@ const flash = require('express-flash');
 const session = require('express-session');
 const WaiterRoutes = require('./waiters');
 const Models = require('./models');
-const models = Models(process.env.MONGO_DB_URL || 'MONGOLAB_URI: mongodb://admin:admin@mlab.com:12345/db');
+const models = Models(process.env.MONGO_DB_URL || 'mongodb://localhost/waiterapp');
 const waiterRoutes = WaiterRoutes(models);
 const app = express();
 
