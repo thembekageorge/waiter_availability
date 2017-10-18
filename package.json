@@ -1,7 +1,6 @@
 {
   "name": "waiter_availability",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,16 @@
     "mongodb": "^2.2.31",
     "mongoose": "4.1.9",
     "nodemon": "^1.12.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thembekageorge/waiter_availability.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/thembekageorge/waiter_availability/issues"
+  },
+  "homepage": "https://github.com/thembekageorge/waiter_availability#readme",
+  "description": ""
 }

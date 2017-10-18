@@ -29,8 +29,8 @@ app.get('/waiters', waiterRoutes.waiters);
 app.get('/waiters/:username', waiterRoutes.waiterAccess);
 app.post('/waiters/:username', waiterRoutes.days);
 app.get('/admin', waiterRoutes.admin);
-// app.get('/clear', waiterRoutes.clearHistory)
-// app.post('/clear', waiterRoutes.clearHistory)
+app.get('/clear', waiterRoutes.clearHistory)
+app.post('/clear', waiterRoutes.clearHistory)
 
 const port = process.env.PORT || 5000;
 app.listen(port, function(){
